@@ -1,0 +1,37 @@
+{
+  "name": "playwright-universal-api-framework",
+  "version": "1.0.0",
+  "description": "Ultra-versatile, enterprise-grade API test automation framework built with JavaScript and Playwright",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:dev": "cross-env TEST_ENV=dev playwright test",
+    "test:staging": "cross-env TEST_ENV=staging playwright test",
+    "test:prod": "cross-env TEST_ENV=prod playwright test",
+    "test:report": "playwright show-report",
+    "mock:server": "node scripts/mockServer.js",
+    "schema:generate": "node scripts/generateSchema.js"
+  },
+  "keywords": [
+    "playwright",
+    "api-testing",
+    "test-automation",
+    "rest-api",
+    "graphql",
+    "schema-validation",
+    "javascript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "@playwright/test": "^1.51.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7"
+  }
+}
